@@ -1,0 +1,44 @@
+drop table transaction;
+drop table hotel_status;
+drop table hotel_info;
+drop table customer_info;
+
+create table customer_info(
+    cus_id integer,
+    cus_name varchar(20),
+    profession varchar(20),
+    Hometown varchar(20),
+    contact_no number(11),
+    primary key(cus_id)
+    );
+create  table hotel_info(
+   hotel_id integer,
+   place varchar(20),
+   offers varchar(20),
+   type varchar(20), 
+   primary key (hotel_id)
+);
+
+create table hotel_status(
+    hotel_id integer,
+    room_no integer,
+    floor integer,
+    cost number,
+    type varchar(30),
+     primary key (hotel_id,room_no),
+     foreign key (hotel_id) references hotel_info(hotel_id) on delete cascade
+);
+
+create table transaction(
+   transaction_no integer,
+   cus_id integer,
+   room_no integer,
+   payment number,
+   arrval_date date,
+   hotel_id integer,
+   primary key (transaction_no),
+   foreign key(cus_id) references customer_info(cus_id) on delete cascade,
+   foreign key(hotel_id,room_no) references hotel_status (hotel_id,room_no) on delete cascade
+ );
+
+

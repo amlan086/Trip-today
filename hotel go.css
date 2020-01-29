@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#title{
+
+  align-content: center;
+  padding-left: 550px;
+  background-image: "hot.jpg"
+
+}
+#title2{
+
+  align-content: center;
+  padding-left: 530px;
+
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: green;
+}

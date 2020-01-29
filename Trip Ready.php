@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trip Ready</title>
+	<link rel="stylesheet" type="text/css" href="Trip Ready.css">
+  <script type="text/javascript" src="date_time.js"></script>
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+	<header>
+   <h1 align="center">Trip Ready </h1>
+</header>
+
+
+<div  align="left">
+	<ul>
+  <li><a href="#home">Home</a></li>
+   <li class="dropdown">
+    <a herf="" class="dropbtn">Booking</a>
+    <div class="dropdown-content">
+      <a href="#">For a day</a>
+      <a href="#">For a week</a>
+      <a href="#">For a month</a>
+    </div>
+</li>
+
+  <li class="dropdown">
+    <a herf="" class="dropbtn">Search</a>
+    <div class="dropdown-content">
+      <a href="#">Search by place</a>
+      <a href="#">Search by rent</a>
+      <a href="#">Search by class</a>
+    </div>
+  </li>
+
+
+  <li><a href="#home">About Us</a></li>
+
+
+
+
+<li style="padding-left: 600px; padding-top: 20px; ">
+  	<input type="Text" placeholder="Search a Hotel">
+     <input type="Submit"></li>
+	</ul>
+</div >
+
+<span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+
+
+
+<div class="save" align="left">
+  <img src="n.jpg" alt="Hotel" >
+
+
+<div id="crossfade" align="left">
+  <img src="a1.jpg" alt="Image 1">
+  <img src="a2.jpg" alt="Image 2">
+  <img src="a3.jpg" alt="Image 3">
+  <img src="hot.jpg" alt="Image 1">
+
+
+<div allign="right" id="form">
+	<h3>Login </h3>
+<form  action="login.php">
+
+  <div >
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
+
+
+<footer>Copywrite TripReady.com</footer>
+</body>
+</html>
